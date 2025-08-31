@@ -1,0 +1,21 @@
+/* Reset and Tailwind utilities */
+/* @import "tailwindcss/preflight";
+@tailwind utilities; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom styles */
+
+/* Custom global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+}
