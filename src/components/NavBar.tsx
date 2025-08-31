@@ -22,7 +22,7 @@ export default function NavBar() {
             <div className="fixed top-0 w-11/12 right 0 -z-10 translate-x-[20%]  translate-y-[-80%]">
                 <Image className="w-full" src={assets.header_bg_color} alt="" />
             </div>
-            <nav className="flex items-center justify-between mx-2 mt-2 md:mx-3 lg:mx-10 ">
+            <nav className="flex items-center justify-between mt-2 md:mx-3 lg:mx-10">
                 <a href="#home" className="w-40">
                     <Image src={assets.logo} alt="logo" />
                 </a>
