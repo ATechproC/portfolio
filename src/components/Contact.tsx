@@ -6,10 +6,7 @@ import { assets } from "../assets/assets";
 export default function Contact() {
     return (
         <>
-            <div className="fixed top-0 bottom-0 left-0 right-0 -z-1">
-                <Image className="w-full h-full" draggable={false} src={assets.header_bg_color} alt="" />
-            </div>
-            <div className="relative py-10 m-auto text-center w-[480px]">
+            <div className="py-10 m-auto text-center w-[480px] bg-no-repeat bg-cover">
                 <p className="text-slate-800">Connect with me</p>
                 <h1 className="text-4xl text-slate-800">Get in touch</h1>
                 <p className="w-2/3 m-auto mt-3 text-sm text-gray-600">
