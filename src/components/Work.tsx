@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { assets, serviceData, workData } from "../assets/assets";
+import { assets, workData } from "../assets/assets";
 
 
 export default function Work() {
