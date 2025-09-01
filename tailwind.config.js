@@ -10,7 +10,12 @@ module.exports = {
     "./layouts/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow : {
+        "shadow" : "0 5px 10px rgba(0, 0, 0, 0.6)",
+        "initial" : "0 5px 10px rgba(0, 0, 0, 0.4)"
+      }
+    },
   },
   plugins: [],
 }
