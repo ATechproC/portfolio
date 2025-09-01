@@ -12,7 +12,7 @@ export default function Services() {
                     I am a frontend developer from California, USA with 10 years of experience in multiple
                     companies like Microsoft, Tesla and Apple.
                 </p>
-                <ul className="grid gap-4 pt-10 sm:grid-cols-3">
+                <ul className="grid gap-4 pt-10 grid-cols-auto">
                     {serviceData.map(({icon, title, description}, index) => {
                         return <li key={index} className="flex flex-col flex-wrap justify-center gap-3 px-5 duration-300 border cursor-default w-100 border-gray shadow-initial rounded-xl hover:-translate-y-1 hover:shadow-shadow" >
                             <Image className="relative mb-1 left-3 top-3" src={icon} alt="" width={50} height={50} />
