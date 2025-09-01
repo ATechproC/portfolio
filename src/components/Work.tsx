@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { assets, workData } from "../assets/assets";
+import { assets } from "../assets/assets";
+import { workData } from "../assets/assets";
 
 
 export default function Work() {
@@ -16,7 +17,7 @@ export default function Work() {
                     {workData.map(({ title, description, bgImage }, index) => {
                         return <li key={index} className="grow-1 basis-44">
                             <div className="relative w-full">
-                                <Image className="w-full duration-300 cursor-default shadow-initial hover:shadow-shadow" src={bgImage} alt=""/>
+                                <Image className="w-full duration-300 cursor-default shadow-initial hover:shadow-shadow" src={bgImage} width={50} height={80} alt=""/>
                                 <div className="absolute text-sm bg-white bottom-5 left-[50%] translate-x-[-50%] whitespace-nowrap px-5 py-1 rounded-md">
                                     <h3 className="text-sm font-bold text-slate-700"> {title} </h3>
                                     <p className="text-gray-500"> {description} </p>

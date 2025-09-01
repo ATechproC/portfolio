@@ -17,10 +17,10 @@ export default function Header() {
                     <p className="text-3xl">based in London.</p>
                 </div>
                 <p className="p-1 text-gray-600">
-                    <p>
+                    <span className="block">
                         I am a frontend developer from California, USA with 10 years of experience in multiple companies
-                    </p>
-                    <p>like Microsoft, Tesla and Apple</p>
+                    </span>
+                    <span className="block">like Microsoft, Tesla and Apple</span>
                 </p>
                 <div className="flex items-center justify-center gap-3 pt-3">
                     <button className="flex items-center gap-3 px-4 py-3 font-bold text-white bg-black rounded-full">
