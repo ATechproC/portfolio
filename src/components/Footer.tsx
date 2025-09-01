@@ -3,9 +3,9 @@ import { assets } from "../assets/assets";
 
 export default function Footer() {
     return (
-        <>
+        <div className="pb-2">
         <div className="w-1/5 m-auto">
-            <Image src={assets.logo} alt="" />
+            <Image className="m-auto" src={assets.logo} alt="" width={100} height={100} />
             <div className="flex items-center h-3 gap-3 text-sm w-7 text-slate-600" >
                 <Image className="object-contain w-full h-full" src={assets.mail_icon} alt="" /> greatstackdev@gmail.com
             </div>
@@ -19,6 +19,7 @@ export default function Footer() {
                 <p>Connect with me</p>
             </span>
         </div>
-        </>
+        </div>
     )
 }
+
