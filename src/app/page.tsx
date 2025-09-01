@@ -1,9 +1,9 @@
-import Work from "../components/Work";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
     <>
-      <Work />
+      <Contact />
     </>
   );
 }
