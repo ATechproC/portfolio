@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css"
+import { DarkThemeProvider } from "../contexts/DarkThemeContext";
+import ThemeInitializer from "../components/ThemeInitializer";
+import ScrollTop from "../components/ScrollTop";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,10 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
-        {children}
-      </body>
-    </html>
+    <DarkThemeProvider>
+      <html lang="en" className="">
+        <body className="dark:bg-darkTheme dark:text-white">
+          <ThemeInitializer />
+          <ScrollTop />
+          {children}
+        </body>
+      </html>
+    </DarkThemeProvider>
   );
 }

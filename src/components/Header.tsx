@@ -17,7 +17,7 @@ export default function Header() {
                         <p>frontend web developer</p>
                         <p>based in London.</p>
                     </div>
-                    <p className="p-1 text-gray-600">
+                    <p className="p-1 text-gray-600 dark:text-white">
                         <span className="block">
                             I am a frontend developer from California, USA with 10 years of experience in multiple companies
                         </span>
@@ -28,7 +28,7 @@ export default function Header() {
                             connect with me
                             <Image src={assets.right_arrow_bold_dark} alt="" width={20} height={20} />
                         </button>
-                        <button className="flex items-center justify-center gap-3 px-3 py-2 font-bold text-black border-2 border-black rounded-full w-[185px] md:w-50">
+                        <button className="flex items-center justify-center gap-3 px-3 py-2 font-bold text-black border-2 border-black rounded-full w-[185px] md:w-50 dark:bg-white">
                             resume
                             <Image src={assets.download_icon} alt="" width={20} height={20} />
                         </button>

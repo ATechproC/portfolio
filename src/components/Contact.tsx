@@ -3,11 +3,13 @@
 import Image from "next/image";
 import { assets } from "../assets/assets";
 import { useEffect, useState } from "react";
-
+import { useDarkTheme } from "../contexts/DarkThemeContext";
 
 
 export default function Contact() {
     
+    const {isDarkTheme} = useDarkTheme();
+
     const [result, setResult] = useState("");
 
     useEffect(() => {
@@ -45,24 +47,25 @@ export default function Contact() {
     };
     return (
         <>
-            <div id="contact" className="w-4/5 scroll-mt-6 py-10 m-auto mt-1 text-center bg-no-repeat bg-cover md:w-[500]">
-                <p className="text-slate-800">Connect with me</p>
-                <h1 className="text-4xl text-slate-800">Get in touch</h1>
-                <p className="w-2/3 m-auto mt-3 text-sm text-gray-600">
+            <div id="contact" className="w-4/5 scroll-mt-12 py-10 m-auto mt-1 text-center bg-no-repeat bg-cover md:w-[500]">
+                <p className="text-slate-800 dark:text-white">Connect with me</p>
+                <h1 className="text-4xl dark:text-white text-slate-800">Get in touch</h1>
+                <p className="w-2/3 m-auto mt-3 text-sm text-gray-600 dark:text-white">
                     Id love to hear from you! If you have any questions, comments or
                     feedback, please use the form below.
                 </p>
                 <form onSubmit={onSubmit}  className="items-center w-full mt-7">
                     <div className="flex flex-col items-center justify-between gap-3 md:flex-row">
-                        <input className="w-full p-2 border border-gray-500 outline-none"  type="text" placeholder="Enter your name" required name="name" />
-                        <input className="w-full p-2 border border-gray-500 outline-none" type="email" placeholder="Enter your email" required name="email" />
+                        <input className="w-full p-2 border border-gray-500 rounded-lg outline-none placeholder:dark:text-white dark:bg-darkHover"  type="text" placeholder="Enter your name" required name="name" />
+                        <input className="w-full p-2 border border-gray-500 rounded-lg outline-none placeholder:dark:text-white dark:bg-darkHover" type="email" placeholder="Enter your email" required name="email" />
                     </div>
-                    <textarea className="w-full p-2 mt-5 border border-gray-500 outline-none h-52" placeholder="Enter your message" required name="message" ></textarea>
-                    <button className="flex items-center gap-3 px-5 py-1 mx-auto mt-4 text-white bg-black border rounded-full" type="submit">Submit <Image src={assets.right_arrow_white} alt="" width={17} height={17} /> </button>
+                    <textarea className="w-full p-2 mt-5 border border-gray-500 rounded-lg outline-none placeholder:dark:text-white dark:bg-darkHover h-52" placeholder="Enter your message" required name="message" ></textarea>
+                    <button className="flex items-center gap-3 px-5 py-1 mx-auto mt-4 text-white bg-black border rounded-full dark:bg-darkHover" type="submit">Submit <Image src={isDarkTheme ? assets.right_arrow_white : assets.right_arrow_white} alt="" width={17} height={17} /> </button>
                 </form>
-                <div className="mt-1 text-start text-slate-700">{result}</div>
+                <div className="mt-1 text-start text-slate-700 dark:text-white">{result}</div>
             </div>
-            <div className="pb-2">
+            
+            {/* <div className="pb-2">
                 <div className="w-1/5 m-auto">
                     <Image className="m-auto" src={assets.logo} alt="" width={100} height={100} />
                     <div className="relative -z-10 flex items-center text-center w-fit text-sm gap-2 left-[50%] -translate-x-[50%] text-slate-600" >
@@ -79,7 +82,7 @@ export default function Contact() {
                         <p>Connect with me</p>
                     </span>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }
