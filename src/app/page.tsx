@@ -9,7 +9,8 @@ import Work from "../components/Work";
 export default function Home() {
 
   return (
-    <div className="overflow-x-hidden">      <NavBar />
+    <div className="overflow-x-hidden">
+      <NavBar />
       <Header />
       <About />
       <Services />
