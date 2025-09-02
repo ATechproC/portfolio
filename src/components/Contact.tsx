@@ -6,7 +6,7 @@ import { assets } from "../assets/assets";
 export default function Contact() {
     return (
         <>
-            <div id="contact" className="w-4/5 py-10 m-auto mt-1 text-center bg-no-repeat bg-cover md:w-[500]">
+            <div id="contact" className="w-4/5 scroll-mt-5 py-10 m-auto mt-1 text-center bg-no-repeat bg-cover md:w-[500]">
                 <p className="text-slate-800">Connect with me</p>
                 <h1 className="text-4xl text-slate-800">Get in touch</h1>
                 <p className="w-2/3 m-auto mt-3 text-sm text-gray-600">

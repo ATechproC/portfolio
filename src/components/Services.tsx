@@ -4,7 +4,7 @@ import { assets, serviceData } from "../assets/assets";
 
 export default function Services() {
     return (
-            <div id="services"  className="w-4/5 my-[70px] 10 m-auto text-center ">
+            <div id="services"  className="w-4/5 my-[70px] 10 m-auto text-center scroll-mt-10">
                 <p className="text-slate-800">What i offers</p>
                 <h1 className="text-4xl text-slate-800">My services</h1>
                 <p className="w-2/3 m-auto mt-3 text-sm text-gray-600">
