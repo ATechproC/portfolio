@@ -10,11 +10,12 @@ export default function Services() {
     const { isDarkTheme } = useDarkTheme();
 
     return (
+        <>
         <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            id="services" className="w-4/5 my-[70px] lg:py-16 m-auto text-center scroll-mt-20">
+            id="services" className="w-4/5 my-[70px] lg:py-10 m-auto text-center scroll-mt-20">
             <motion.p
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -50,5 +51,7 @@ export default function Services() {
                 })}
             </motion.ul>
         </motion.div>
+        <hr className="w-4/5 m-auto" />
+        </>
     )
 }
