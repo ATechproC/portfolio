@@ -10,7 +10,17 @@ module.exports = {
     "./layouts/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors : {
+        darkTheme : "#11001F",
+        darkHover : "#2a004a",
+      },
+      boxShadow : {
+        "shadow" : "0 5px 10px rgba(0, 0, 0, 0.6)",
+        "initial" : "0 5px 10px rgba(0, 0, 0, 0.4)"
+      }
+    },
   },
+  darkMode : "selector",
   plugins: [],
 }
