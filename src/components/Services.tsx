@@ -51,7 +51,7 @@ export default function Services() {
                 })}
             </motion.ul>
         </motion.div>
-        <hr className="w-4/5 m-auto" />
+        <hr className="hidden w-4/5 m-auto bg-stone-700 h-[2px] md:block" />
         </>
     )
 }
