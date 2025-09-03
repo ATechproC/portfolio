@@ -41,6 +41,7 @@ import work3 from "../assets/public/work-3.png"
 import work4 from "../assets/public/work-4.png"
 import top from "./top.png";
 import top1 from "./top1.png";
+import moon from "./moon.png";
 
 export const assets = {
     user_image,
@@ -82,6 +83,7 @@ export const assets = {
     right_arrow_bold_dark,
     top,
     top1,
+    moon
 };
 
 export const workData = [

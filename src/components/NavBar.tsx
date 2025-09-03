@@ -42,7 +42,7 @@ export default function NavBar() {
                 <div className="hidden md:block">
                     <ul className="flex items-center gap-5 p-2 shadow-md rounded-2xl dark:border dark:border-white dark:shadow-[0_1px_5px_rgba(255,255,255)]">
                         <li><a href='#home'>Home</a></li>
-                        <li><a href='#about'>About me</a></li>
+                        <li><a href='#about'>About <span className="hidden lg:inline-block">me</span></a></li>
                         <li><a href='#services'>Services</a></li>
                         <li><a href='#work'>My Work</a></li>
                         <li><a href='#contact'>Contact me</a></li>
@@ -50,7 +50,7 @@ export default function NavBar() {
                 </div>
                 <div className="flex items-center gap-5 cursor-pointer">
                     <button>
-                        <Image onClick={handleClick} src={isDarkTheme ? assets.sun_icon :assets.moon_icon} alt="" width={20} height={20} />
+                        <Image onClick={handleClick} src={isDarkTheme ? assets.sun_icon :assets.moon} alt="" width={20} height={20} />
                     </button>
                     <span className="hidden mr-3 md:block">
                         <a href="#contact" className="flex items-center gap-2 p-1.5 border-2 border-gray-400 rounded-2xl">
